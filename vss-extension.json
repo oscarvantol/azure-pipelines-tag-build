@@ -1,0 +1,51 @@
+{
+    "manifestVersion": 1,
+    "id": "tag-build",
+    "name": "Tag Build",
+    "version": "0.0.13",
+    "publisher": "ovantol",
+    "public": false,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "Do stuff",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "icon.png"
+    },
+    "files": [
+        {
+            "path": "tag-build-task"
+        }
+    ],
+    "content": {
+        "details": {
+          "path": "overview.md"
+        }
+    },
+    "links": {
+        "getstarted": {
+            "uri": "https://github.com/oscarvantol/azure-pipelines-tag-build"
+        },
+        "repository": {
+            "type": "git",
+            "uri": "https://github.com/oscarvantol/azure-pipelines-tag-build"
+        }
+    },
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "tag-build-task"
+            }
+        }
+    ]
+}

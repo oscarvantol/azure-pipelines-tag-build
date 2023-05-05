@@ -1,0 +1,11 @@
+{
+  "name": "tag-build",
+  "version": "0.1.0",
+  "description": "Helper packagejson",
+  "scripts": {
+    "build-it": "(cd tag-build-task && npm install && npm run build && npm prune --production )",
+    "pack-it": "tfx extension create --manifest-globs vss-extension.json --rev-version --output-path dist"
+  },
+  "author": "Oscar van Tol",
+  "license": "MIT"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "tag-build-task",
+  "version": "0.0.2",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Oscar van Tol",
+  "license": "MIT",
+  "dependencies": {
+    "@types/btoa": "^1.2.3",
+    "azure-pipelines-task-lib": "^4.3.1",
+    "azure-devops-extension-api": "^1.158.0",
+    "btoa": "^1.2.1",
+    "typed-rest-client": "^1.8.9"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.14",
+    "@types/q": "^1.5.4",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.6"
+  }
+}
